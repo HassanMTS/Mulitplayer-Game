@@ -15,7 +15,10 @@ app.get('/', (req, res) => {
 })
 
 const players = {
-  
+  dhsahdsaduhs: {
+  x: 100,
+  y: 100
+}
 }
 
 io.on('connection', (socket) => {

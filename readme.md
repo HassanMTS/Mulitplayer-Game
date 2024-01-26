@@ -12,7 +12,7 @@ This repository contains the backend server for a multiplayer game using Node.js
 1. Clone this repository:
 
 ```bash
-git clone [https://github.com/your-username/game-server.git](https://github.com/HassanMTS/Mulitplayer-Game.git)
+git clone (https://github.com/HassanMTS/Mulitplayer-Game.git)
 ```
 
 2. Install dependencies:

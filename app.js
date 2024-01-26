@@ -3,7 +3,7 @@ const app = express()
 
 const http = require('http')
 const server = http.createServer(app)
-const { server } = require('socket.io')
+const { Server } = require('socket.io')
 const io = new Server(server)
 
 const port = 3000
@@ -15,10 +15,16 @@ app.get('/', (req, res) => {
 })
 
 const players = {
-  dhsahdsaduhs: {
+  dhsahcsaduhs: {
   x: 100,
-  y: 100
-}
+  y:100,
+  color: 'yellow'
+  },
+  daddadadsa: {
+    x: 200,
+    y:200,
+    color: 'yellow'
+    },
 }
 
 io.on('connection', (socket) => {

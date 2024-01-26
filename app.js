@@ -14,6 +14,10 @@ app.get('/', (req, res) => {
   res.sendFile(__dirname + '/index.html')
 })
 
+const players = {
+  
+}
+
 io.on('connection', (socket) => {
   console.log('a user connected')
 })

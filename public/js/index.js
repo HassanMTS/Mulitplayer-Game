@@ -13,6 +13,9 @@ const y = canvas.height / 2
 
 const player = new Player(x, y, 10, 'white')
 
+socket.on('updatePlayers', (players) => {
+  console.log(players)
+})
 
 let animationId
 let score = 0

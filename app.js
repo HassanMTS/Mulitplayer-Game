@@ -28,6 +28,7 @@ players[socket.id] = {
   y: 100
 }
 
+console.log(players)
 });
 
 // Starting the server
@@ -36,4 +37,3 @@ server.listen(port, () => {
 });
 
 console.log('server did load');
-S

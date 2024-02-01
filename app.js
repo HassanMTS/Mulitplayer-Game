@@ -28,6 +28,8 @@ players[socket.id] = {
   y: 100
 }
 
+io.emit('updatePlayers',players)
+
 console.log(players)
 });
 

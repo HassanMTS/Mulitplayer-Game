@@ -18,7 +18,9 @@ socket.on('updatePlayers', (players) => {
   for (const id in backendPlayers) {
     const backendPlayers = backendPlayers[id]
 
-    if (players)
+    if (!players[id]) {
+      
+    }
   }
 })
 

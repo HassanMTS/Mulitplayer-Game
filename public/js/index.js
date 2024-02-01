@@ -22,6 +22,8 @@ socket.on('updatePlayers', (backendPlayers) => {
       players[id] = new Player(backendPlayer.x, backendPlayer.y, 10, 'white')
     }
   }
+
+  console.log(players)
 })
 
 let animationId

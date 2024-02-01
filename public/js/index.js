@@ -12,9 +12,13 @@ const x = canvas.width / 2
 const y = canvas.height / 2
 
 const player = new Player(x, y, 10, 'white')
+const players = {}
 
 socket.on('updatePlayers', (players) => {
-  console.log(players)
+  for (const id in backendPlayers) {
+    const backendPlayers = backendPlayers[id]
+
+  }
 })
 
 let animationId

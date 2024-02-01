@@ -18,23 +18,16 @@ app.get('/', (req, res) => {
 });
 
 // Player data structure
-const players = {
-  dhsahcsaduhs: {
-    x: 100,
-    y: 100,
-    color: 'yellow'
-  },
-  daddadadsa: {
-    x: 200,
-    y: 200,
-    color: 'yellow'
-  },
-};
+const players = {};
 
 // Handling socket.io connection event
 io.on('connection', (socket) => {
   console.log('a user connected');
-  // You can add socket-specific logic here for the connected user
+players[socket.id] = {
+  x: 100,
+  y: 100
+}
+
 });
 
 // Starting the server
@@ -43,3 +36,4 @@ server.listen(port, () => {
 });
 
 console.log('server did load');
+S

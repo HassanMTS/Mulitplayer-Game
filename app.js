@@ -27,6 +27,7 @@ players[socket.id] = {
   x: 500 *Math.random(),
   y: 500 *Math.random()
 }
+ 
 
 io.emit('updatePlayers',players)
 
